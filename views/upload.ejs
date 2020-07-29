@@ -1,0 +1,24 @@
+<%- include ('./partials/header.ejs') %>
+<html>
+    <body>
+        <%- include ('./partials/nav.ejs') %>
+        <div class="container p-4">
+            <form action="/upload" method="POST">
+                <div class="text-center bg-info text-white rounded p-1 mb-3">
+                    <h3>Add new employee</h3>
+                </div>
+                <label for=""><b>Name</b></label>
+                <input type="text" class="form-control" placeholder="Enter name" name="name">
+                <label for=""><b>Department</b></label>
+                <input type="text" class="form-control" placeholder="Enter name" name="department">
+                <label for=""><b>Designation</b></label>
+                <input type="text" class="form-control" placeholder="Enter name" name="designation">
+                <label for=""><b>Salary</b></label>
+                <input type="number" class="form-control" name="salary">
+                <div class="text-center">
+                    <button class="btn btn-success btn-lg mt-4">Add Employee</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
